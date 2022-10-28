@@ -34,18 +34,24 @@ html {
 .sub-section{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
   padding: 60px;
   font-family: "Roboto Slab";
 }
 
 .headshot{
+
   width: 300px;
+  object-fit: contain;
   border-radius: 40px;
   box-shadow: 5px 5px 20px #39268F;
   transition: width 1s, box-shadow 0.3s, transform 0.3s;
+  margin-left: 80px;
 }
 
 .headshot:hover{
+  object-fit: contain;
   width: 310px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px #39268F;
@@ -117,12 +123,6 @@ h1{
   margin: 0;
 }
 
-p{
-  font-size: 30px;
-  font-weight: 300;
-  margin: 0;
-  color: #1b142f
-}
 
 .sous-titre-principal{
   font-size: 30px;
@@ -171,6 +171,13 @@ p{
 h2{
   font-size: 50px;
   color: #1b142f;
+  text-decoration: none;
+  transition: text-decoration 3s, font-size 0.3s, transform 3s;
+
+}
+
+h2:hover{
+  font-size: 53px;
 
 }
 
@@ -218,7 +225,7 @@ h3{
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .projets {
     display: flex;
     flex-wrap:wrap;
@@ -265,6 +272,29 @@ h3{
     font-size: 60px;
   }
 
+  .informations{
+    margin: 10px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .informations{
+
+    width: auto;
+    margin-right: 0px;
+
+  }
+  legend{
+    text-align: center;
+    align_items: center;
+  }
+
+  .headshot{
+    margin-left: 0px;
+  }
+
 
 
 }
@@ -281,6 +311,69 @@ a{
   scroll-behavior: smooth;
 
 }
+
+p{
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  color: #1b142f
+}
+
+.informations{
+  align-items: center;
+  text-align: left;
+  width: auto;
+
+
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  box-shadow: 5px 5px 20px #39268F;
+  background-color: #ada3ff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 10px;
+  transition: background-color 1s, font-size 1s, box-shadow 1s, transform 1s;
+
+}
+
+fieldset:hover{
+  box-shadow: 5px 5px 30px #39268F;
+  font-size: 30px;
+  background-color:#c3b7ff;
+
+
+
+  font-size: arian;
+
+}
+
+legend{
+  font-size: 20px;
+  background-color:  #ada3ff;
+  box-shadow: 0px -4px 20px #39268F;
+  border-radius:  7px;
+  color: #eae3ff;
+}
+
+.Textes-qui-suis-je {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,7 +399,7 @@ a{
     margin: 0;
     padding: 0;
     background: rgba(57, 38, 143,0.8);
-    overflow: hidden;
+
     z-index: -1;
 }
 .background li {
@@ -315,245 +408,242 @@ a{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(139, 100, 191, 0.2);
+    background: rgba(139, 100, 191, 0.3);
     animation: animate 17s linear infinite;
 }
 
-
-
-
-.background li:nth-child(0) {
+.background li:nth-child(33) {
     left: 9%;
     width: 154px;
     height: 154px;
     bottom: -154px;
     animation-delay: 1s;
 }
-.background li:nth-child(1) {
+.background li:nth-child(32) {
     left: 44%;
     width: 130px;
     height: 130px;
     bottom: -130px;
     animation-delay: 1s;
 }
-.background li:nth-child(2) {
+.background li:nth-child(31) {
     left: 73%;
     width: 100px;
     height: 100px;
     bottom: -100px;
     animation-delay: 10s;
 }
-.background li:nth-child(3) {
+.background li:nth-child(30) {
     left: 48%;
     width: 37px;
     height: 37px;
     bottom: -37px;
     animation-delay: 7s;
 }
-.background li:nth-child(4) {
+.background li:nth-child(29) {
     left: 8%;
     width: 183px;
     height: 183px;
     bottom: -183px;
     animation-delay: 13s;
 }
-.background li:nth-child(5) {
+.background li:nth-child(28) {
     left: 45%;
     width: 113px;
     height: 113px;
     bottom: -113px;
     animation-delay: 6s;
 }
-.background li:nth-child(6) {
+.background li:nth-child(27) {
     left: 2%;
     width: 229px;
     height: 229px;
     bottom: -229px;
     animation-delay: 26s;
 }
-.background li:nth-child(7) {
+.background li:nth-child(26) {
     left: 84%;
     width: 160px;
     height: 160px;
     bottom: -160px;
     animation-delay: 13s;
 }
-.background li:nth-child(8) {
+.background li:nth-child(25) {
     left: 80%;
     width: 228px;
     height: 228px;
     bottom: -228px;
     animation-delay: 22s;
 }
-.background li:nth-child(9) {
+.background li:nth-child(24) {
     left: 61%;
     width: 195px;
     height: 195px;
     bottom: -195px;
     animation-delay: 15s;
 }
-.background li:nth-child(10) {
+.background li:nth-child(23) {
     left: 78%;
     width: 107px;
     height: 107px;
     bottom: -107px;
     animation-delay: 36s;
 }
-.background li:nth-child(11) {
+.background li:nth-child(22) {
     left: 25%;
     width: 78px;
     height: 78px;
     bottom: -78px;
     animation-delay: 17s;
 }
-.background li:nth-child(12) {
+.background li:nth-child(21) {
     left: 18%;
     width: 264px;
     height: 264px;
     bottom: -264px;
     animation-delay: 25s;
 }
-.background li:nth-child(13) {
+.background li:nth-child(20) {
     left: 20%;
     width: 187px;
     height: 187px;
     bottom: -187px;
     animation-delay: 26s;
 }
-.background li:nth-child(14) {
+.background li:nth-child(19) {
     left: 3%;
     width: 205px;
     height: 205px;
     bottom: -205px;
     animation-delay: 12s;
 }
-.background li:nth-child(15) {
+.background li:nth-child(18) {
     left: 67%;
     width: 167px;
     height: 167px;
     bottom: -167px;
     animation-delay: 20s;
 }
-.background li:nth-child(16) {
+.background li:nth-child(17) {
     left: 25%;
     width: 54px;
     height: 54px;
     bottom: -54px;
     animation-delay: 79s;
 }
-.background li:nth-child(17) {
+.background li:nth-child(16) {
     left: 23%;
     width: 115px;
     height: 115px;
     bottom: -115px;
     animation-delay: 38s;
 }
-.background li:nth-child(18) {
+.background li:nth-child(15) {
     left: 45%;
     width: 102px;
     height: 102px;
     bottom: -102px;
     animation-delay: 5s;
 }
-.background li:nth-child(19) {
+.background li:nth-child(14) {
     left: 60%;
     width: 178px;
     height: 178px;
     bottom: -178px;
     animation-delay: 17s;
 }
-.background li:nth-child(20) {
+.background li:nth-child(13) {
     left: 56%;
     width: 45px;
     height: 45px;
     bottom: -45px;
     animation-delay: 38s;
 }
-.background li:nth-child(21) {
+.background li:nth-child(12) {
     left: 56%;
     width: 68px;
     height: 68px;
     bottom: -68px;
     animation-delay: 74s;
 }
-.background li:nth-child(22) {
+.background li:nth-child(11) {
     left: 63%;
     width: 59px;
     height: 59px;
     bottom: -59px;
     animation-delay: 61s;
 }
-.background li:nth-child(23) {
+.background li:nth-child(10) {
     left: 63%;
     width: 252px;
     height: 252px;
     bottom: -252px;
     animation-delay: 50s;
 }
-.background li:nth-child(24) {
+.background li:nth-child(9) {
     left: 22%;
     width: 180px;
     height: 180px;
     bottom: -180px;
     animation-delay: 73s;
 }
-.background li:nth-child(25) {
+.background li:nth-child(8) {
     left: 55%;
     width: 104px;
     height: 104px;
     bottom: -104px;
     animation-delay: 49s;
 }
-.background li:nth-child(26) {
+.background li:nth-child(7) {
     left: 37%;
     width: 162px;
     height: 162px;
     bottom: -162px;
     animation-delay: 98s;
 }
-.background li:nth-child(27) {
+.background li:nth-child(6) {
     left: 45%;
     width: 49px;
     height: 49px;
     bottom: -49px;
     animation-delay: 95s;
 }
-.background li:nth-child(28) {
+.background li:nth-child(6) {
     left: 82%;
     width: 155px;
     height: 155px;
     bottom: -155px;
     animation-delay: 68s;
 }
-.background li:nth-child(29) {
+.background li:nth-child(5) {
     left: 78%;
     width: 146px;
     height: 146px;
     bottom: -146px;
     animation-delay: 49s;
 }
-.background li:nth-child(30) {
+.background li:nth-child(4) {
     left: 20%;
     width: 273px;
     height: 273px;
     bottom: -273px;
     animation-delay: 35s;
 }
-.background li:nth-child(31) {
+.background li:nth-child(3) {
     left: 3%;
     width: 256px;
     height: 256px;
     bottom: -256px;
     animation-delay: 146s;
 }
-.background li:nth-child(32) {
+.background li:nth-child(2) {
     left: 57%;
     width: 261px;
     height: 261px;
     bottom: -261px;
     animation-delay: 76s;
 }
-.background li:nth-child(33) {
+.background li:nth-child(1) {
     left: 7%;
     width: 273px;
     height: 273px;
