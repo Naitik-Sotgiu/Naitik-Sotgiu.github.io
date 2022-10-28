@@ -89,7 +89,7 @@ ul{
 
 }
 li:hover{
-  font-size: 35px;
+  font-size: 25px;
 
 }
 
@@ -104,14 +104,14 @@ body {
   margin-left: 60px;
 }
 li {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   transition: font-size 0.3s, transform 0.3s;
 }
 
 
 h1{
-  font-size: 90px;
+  font-size: 80px;
   margin: 0;
 }
 
@@ -235,6 +235,33 @@ h3{
       box-shadow: 5px 5px 30px #39268F;
   }
 
+
+  .hero-area{
+    text-align: center;
+  }
+
+  li:hover{
+    font-size: 20px;
+
+  }
+  li {
+    font-size: 15px;
+    margin-right: 5px;
+
+
+  }
+
+  .logo {
+    height: 55px;
+
+  }
+  .logo:hover{
+    height: 65px;
+
+  }
+  h1 {
+    font-size: 60px;
+  }
 
 
 
