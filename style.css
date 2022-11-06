@@ -469,13 +469,7 @@ legend{
     bottom: -160px;
     animation-delay: 13s;
 }
-.background li:nth-child(25) {
-    left: 80%;
-    width: 228px;
-    height: 228px;
-    bottom: -228px;
-    animation-delay: 22s;
-}
+
 .background li:nth-child(24) {
     left: 61%;
     width: 195px;
